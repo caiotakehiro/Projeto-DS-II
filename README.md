@@ -28,3 +28,31 @@ Usabilidade: Interface deve ser simples e intuitiva tanto para os funcionários 
 Desempenho: Deve ter o menor tempo de resposta possível para evitar atrasos.
 Confiabilidade: Sistema tem que ser confivael, isso quer dizer que ele deve cometer poucas falhas de forma que não impeça a continuidade das operações.
 Facilidade de suporte: Facilidade de manutenção e atualização do software.
+
+### Identificar casos de uso de negócio por ator (cumprir metas do usuário) e descrever os casos de uso de forma resumida
+#### Atores principais, casos de uso e descrição:
+##### Consumidor</br> 
+Realizar pedidos online: O cliente acessa o software, escolhe os itens desejados e finaliza o pedido. </br> 
+Acompanhar o status do pedido: O cliente acompanha o progresso do pedido, se ele está sendo preparado, se está a caminho ou se chegou.
+
+##### Funcionários dos restaurantes</br> 
+Registrar pedidos: O funcionário registra o pedido feito pelo cliente presencialmente ou via telefone.</br> 
+Atualizar status do pedido: O atendente ou gerente atualiza o status do pedido no sistema.</br> 
+Reportar problemas operacionais: O funcionário deve identificar e relatar falhas ou inconsistências no sistema para garantir o funcionamento eficiente do restaurante.</br> 
+Gerenciar estoque: o Funcionário tem controle dos produtos disponíveis, solicitando reposição quando necessário</br> 
+
+##### Dono:</br> 
+Monitorar desempenho financeiro: O dono visualiza relatórios de vendas, para tomar ciencia do seus próximos passos.
+
+##### Equipe de TI</br> 
+Manutenção do sistema: A equipe de TI realiza manutenção preventiva e corretiva no software, para que ele possa permanecer sendo um software de qualidade.
+
+##### Fornecedores</br> 
+Objetivos:</br> 
+Consultar necessidades de reposição de estoque: O fornecedor verifica quais produto no estoque estão em falta.
+
+##### Entregadores:</br> 
+Receber informações sobre entregas: O entregador recebe detalhes sobre o pedido, como o destino da entrega ou forma de pagamento.</br> 
+Atualizar status da entrega: O entregador informa a situação atual do pedido no sistema.
+
+###
