@@ -29,13 +29,15 @@ Desempenho: Deve ter o menor tempo de resposta possível para evitar atrasos.
 Confiabilidade: Sistema tem que ser confivael, isso quer dizer que ele deve cometer poucas falhas de forma que não impeça a continuidade das operações.
 Facilidade de suporte: Facilidade de manutenção e atualização do software.
 
-### Identificar casos de uso de negócio por ator (cumprir metas do usuário) e descrever os casos de uso de forma resumida
+## Modelo de caso de uso:
+### Casos de uso de negócio por ator (cumprir metas do usuário) e descrever os casos de uso de forma resumida
 #### Atores principais, casos de uso e descrição:
 ##### Consumidor</br> 
+Se cadastrar no site: o cliente precisa se cadastrar no site, caso ele não tenha feito isso anteriormente. </br>
 Realizar pedidos online: O cliente acessa o software, escolhe os itens desejados e finaliza o pedido. </br> 
 Acompanhar o status do pedido: O cliente acompanha o progresso do pedido, se ele está sendo preparado, se está a caminho ou se chegou.
 
-##### Funcionários dos restaurantes</br> 
+##### Funcionários </br> 
 Registrar pedidos: O funcionário registra o pedido feito pelo cliente presencialmente ou via telefone.</br> 
 Atualizar status do pedido: O atendente ou gerente atualiza o status do pedido no sistema.</br> 
 Reportar problemas operacionais: O funcionário deve identificar e relatar falhas ou inconsistências no sistema para garantir o funcionamento eficiente do restaurante.</br> 
@@ -47,12 +49,15 @@ Monitorar desempenho financeiro: O dono visualiza relatórios de vendas, para to
 ##### Equipe de TI</br> 
 Manutenção do sistema: A equipe de TI realiza manutenção preventiva e corretiva no software, para que ele possa permanecer sendo um software de qualidade.
 
-##### Fornecedores</br> 
-Objetivos:</br> 
+##### Fornecedores</br>
 Consultar necessidades de reposição de estoque: O fornecedor verifica quais produto no estoque estão em falta.
 
 ##### Entregadores:</br> 
 Receber informações sobre entregas: O entregador recebe detalhes sobre o pedido, como o destino da entrega ou forma de pagamento.</br> 
 Atualizar status da entrega: O entregador informa a situação atual do pedido no sistema.
 
-###
+### Caso de uso crítico/mais importante do sistema de forma completa
+![416461018-e2243de4-f070-4df2-8b62-7f3b7d1d8155](https://github.com/user-attachments/assets/fd260b17-b37e-427d-879f-8f24109ae09d)
+
+### Diagrama de caso de uso UML
+![416459645-4418c458-da31-4c3a-afd4-97f508126db0](https://github.com/user-attachments/assets/26c4f7c5-f130-4843-aeb5-1ce5ba6f33aa)
