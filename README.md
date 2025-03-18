@@ -33,8 +33,9 @@ Facilidade de suporte: Facilidade de manutenção e atualização do software.
 ### Casos de uso de negócio por ator (cumprir metas do usuário) e descrever os casos de uso de forma resumida
 #### Atores principais, casos de uso e descrição:
 ##### Consumidor</br> 
-Se cadastrar no site: o cliente precisa se cadastrar no site, caso ele não tenha feito isso anteriormente. </br>
-Realizar pedidos online: O cliente acessa o software, escolhe os itens desejados e finaliza o pedido. </br> 
+Cadastrar no site: o cliente precisa se cadastrar no site, caso ele não tenha feito isso anteriormente. </br>
+Adicionar itens ao carrinho : O cliente acessa o software, escolhe os itens desejados e adiciona ao carrinho. </br> 
+Realizar pagamento : Depois de adicionar os itens no carrinho, o cliente seleciona a forma de pagamento e o finaliza. </br> 
 Acompanhar o status do pedido: O cliente acompanha o progresso do pedido, se ele está sendo preparado, se está a caminho ou se chegou.
 
 ##### Funcionários </br> 
