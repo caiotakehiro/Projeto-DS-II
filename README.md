@@ -20,7 +20,7 @@ Interface amigável para os clientes realizarem pedidos online, acompanharem o s
 ### Clientes, usuários e demais envolvidos/impactados com o produto :
 Clientes finais: Consumidores que utilizarão os serviços da rede de restaurantes.
 Usuários principais: Funcionários dos restaurantes, desde de o atendente até o dono.
-Demais envolvidos: Equipe de Ti que será responsável pela manutenção do sistema, fornecedores dos produtos (para controle de estoque) e parceiros de delivery (entregadores).
+Demais envolvidos: parceiros de delivery (entregadores).
 
 ### Principais critérios de qualidade para o produto :
 Funcionalidade: O sistema deve atender a todas as necessidades de interação com os clientes.
@@ -33,32 +33,42 @@ Facilidade de suporte: Facilidade de manutenção e atualização do software.
 ### Casos de uso de negócio por ator (cumprir metas do usuário) e descrever os casos de uso de forma resumida
 #### Atores principais, casos de uso e descrição:
 ##### Consumidor</br> 
-Cadastrar no site: o cliente precisa se cadastrar no site, caso ele não tenha feito isso anteriormente. </br>
-Adicionar itens ao carrinho : O cliente acessa o software, escolhe os itens desejados e adiciona ao carrinho. </br> 
-Realizar pagamento : Depois de adicionar os itens no carrinho, o cliente seleciona a forma de pagamento e o finaliza. </br> 
-Acompanhar o status do pedido: O cliente acompanha o progresso do pedido, se ele está sendo preparado, se está a caminho ou se chegou.
+Cadastrar no site: O consumidor acessa a plataforma e seleciona a opção de cadastro, caso já não tenha se cadastrado. Ele passa algumas informações pessoais como o e-mail, e escolhe uma senha. O sistema valida os dados, verifica se o e-mail já está registrado e, em caso positivo, notifica o consumidor. Após a validação, o sistema cria uma conta para o consumidor. </br>
+
+Adicionar itens ao carrinho : O consumidor navega pelo site ou aplicativo, buscando os produtos que lhe interessam. Ao encontrar um item ideal, ele adiciona ao carrinho. O sistema atualiza o carrinho exibindo o item adicionado, e mostra o valor total atualizado. O consumidor pode continuar navegando e adicionando mais itens ou acessar o carrinho para revisar os produtos selecionados. </br> 
+
+Realizar pagamento : O consumidor finaliza a seleção de itens e acessa o carrinho para prosseguir com o pagamento. Ele escolhe a forma de pagamento . O sistema solicita os dados necessários, como número do cartão, data de validade e código de segurança. Após a inserção dos dados, o sistema valida a transação. Se a transação for aprovada, o sistema gera um comprovante de pagamento e atualiza o status do pedido. </br> 
+
+Acompanhar o status do pedido: O consumidor acessa sua conta no site ou aplicativo para verificar a situação do pedido. O sistema exibe o status atual do pedido, indicando se o pedido está sendo preparado, pronto para entrega ou já foi entregue. Caso ocorra algum atraso ou problema, o sistema notifica o consumidor automaticamente com uma mensagem explicativa. O consumidor também pode receber atualizações via e-mail ou SMS.
 
 ##### Funcionários </br> 
-Registrar pedidos: O funcionário registra o pedido feito pelo cliente presencialmente ou via telefone.</br> 
-Atualizar status do pedido: O atendente ou gerente atualiza o status do pedido no sistema.</br> 
-Reportar problemas operacionais: O funcionário deve identificar e relatar falhas ou inconsistências no sistema para garantir o funcionamento eficiente do restaurante.</br> 
-Gerenciar estoque: o Funcionário tem controle dos produtos disponíveis, solicitando reposição quando necessário</br> 
+Registrar pedidos: O funcionário atende um cliente presencialmente ou recebe um pedido via telefone. Ele acessa o sistema e registra os detalhes do pedido. O sistema valida os dados inseridos, se tudo estiver correto, confirma o registro do pedido. O sistema então notifica a pessoas nescessária para iniciar o processo da entrega do pedido.</br> 
+
+Atualizar status do pedido: O funcionário acessa o sistema para informar o progresso do pedido. O sistema registra a alteração e notifica automaticamente o consumidor e o entregador sobre o novo status. Se houver algum problema durante a preparação, o funcionário pode registrar observações no sistema para comunicar a situação.</br> 
+
+Gerenciar estoque: O funcionário monitora o estoque de produtos por meio do sistema, verificando a quantidade disponível de cada item. Quando um produto está próximo de ficar em falta, o sistema emite um alerta automático. O funcionário então solicita reposição no sistema, informando a quantidade necessária. O sistema atualiza o estoque em tempo real e registra a solicitação para acompanhamento. </br> 
 
 ##### Dono:</br> 
-Monitorar desempenho financeiro: O dono visualiza relatórios de vendas, para tomar ciencia do seus próximos passos.
-
-##### Equipe de TI</br> 
-Manutenção do sistema: A equipe de TI realiza manutenção preventiva e corretiva no software, para que ele possa permanecer sendo um software de qualidade.
-
-##### Fornecedores</br>
-Consultar necessidades de reposição de estoque: O fornecedor verifica quais produto no estoque estão em falta.
+Monitorar desempenho financeiro: O dono acessa o sistema para visualizar relatórios sobre o desempenho financeiro da empresa. Ele filtra os relatórios de acordo com o que for conveniente para situação. O sistema gera gráficoscom os dados financeiros. Com base nessas informações, o dono toma decisões estratégicas, como ajustar preços ou otimizar custos operacionais.
 
 ##### Entregadores:</br> 
-Receber informações sobre entregas: O entregador recebe detalhes sobre o pedido, como o destino da entrega ou forma de pagamento.</br> 
-Atualizar status da entrega: O entregador informa a situação atual do pedido no sistema.
+Receber informações sobre entregas: O entregador acessa o sistema para obter detalhes sobre o pedido. O sistema exibe informações como endereço de entrega, forma de pagamento, valor total e observações do cliente. O entregador também pode visualizar o status atual do pedido para garantir que está alinhado com o cronograma de entrega.</br> 
+
+Atualizar status da entrega: Durante o processo de entrega, o entregador acessa o sistema para informar o progresso. Por exemplo, ao sair do restaurante, ele atualiza o status para "Saiu para Entrega". Quando o pedido é entregue ao cliente, ele registra o status como "Entregue" e, se necessário, coleta a assinatura ou confirmação do cliente no sistema. O sistema notifica automaticamente o consumidor sobre a conclusão da entrega.
 
 ### Caso de uso crítico/mais importante do sistema de forma completa
-![416461018-e2243de4-f070-4df2-8b62-7f3b7d1d8155](https://github.com/user-attachments/assets/fd260b17-b37e-427d-879f-8f24109ae09d)
+![423776558-290ea485-4f80-439e-a923-6cd245f2c732](https://github.com/user-attachments/assets/0004899c-f1dd-478c-b27f-c80a2cc8985b)
+
 
 ### Diagrama de caso de uso UML
-![416459645-4418c458-da31-4c3a-afd4-97f508126db0](https://github.com/user-attachments/assets/26c4f7c5-f130-4843-aeb5-1ce5ba6f33aa)
+![423770641-bdaf786e-e63e-409c-90e3-3c5b058e892f](https://github.com/user-attachments/assets/b6f034c1-640a-40e5-9b31-8b80c39a414f)
+
+## Prototipagem
+![423848191-6ef4d579-ae58-424b-99a0-f9025ca18918](https://github.com/user-attachments/assets/696e656e-a554-456a-ab8d-6279b9998d2c)
+
+![423848317-23ed4ce8-bdb8-4e60-9787-0659e769d13d](https://github.com/user-attachments/assets/8ea5c227-f7c2-4df2-8732-f6b956fca8e7)
+
+![423848425-408f498b-af42-46b1-81e0-1a35764ae445](https://github.com/user-attachments/assets/15e8aefa-e8bc-4511-aea4-0911f23bce90)
+
+![423848521-ad679977-e27e-4453-bf68-6b5ab85b1925](https://github.com/user-attachments/assets/5ad7d9f0-2e24-4e2a-91c9-7355bd0717d0)
+
