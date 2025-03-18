@@ -72,3 +72,4 @@ Atualizar status da entrega: Durante o processo de entrega, o entregador acessa 
 
 ![423848521-ad679977-e27e-4453-bf68-6b5ab85b1925](https://github.com/user-attachments/assets/5ad7d9f0-2e24-4e2a-91c9-7355bd0717d0)
 
+link figma: https://www.figma.com/design/kqa24SEzVIFO5gqo8plBzO/Prototipagem-DS-II?node-id=0-1&t=Hkkh2n9FQUhi3f3s-1
