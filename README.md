@@ -63,6 +63,14 @@ Atualizar status da entrega: Durante o processo de entrega, o entregador acessa 
 ### Diagrama de caso de uso UML
 ![423770641-bdaf786e-e63e-409c-90e3-3c5b058e892f](https://github.com/user-attachments/assets/b6f034c1-640a-40e5-9b31-8b80c39a414f)
 
+## Modelo de domínio
+![423931158-15412b95-81ab-46ea-9c85-458f1dfe24a7](https://github.com/user-attachments/assets/817c63ac-c05f-410f-ba93-c4b0e0162817)
+
+### Descrição sobre o Modelo de Domínio
+  Fica evidente que a maior parte deste modelo foi feito a partir de um padrão de análise, mais especificamente o de E-commerce, em relação ao original eu mantive praticamente toda sua base, apenas troquei a relação do perfil, pois eu vi que ele se encaixava como uma relação de herança com alguns dos novos objetos do dominío, que no caso são os funcionários e entregadores, visto que ambos tem dados pessoais e eles são convenientes para situação pois eles tem seus registros também. A entrega foi outra modificação que eu adicionei no Modelo, como se trata de um aplicativo de entrega de comida eu achei importante colocar esse objeto, e ele deve conter algumas informações que seriam a situação atual da entrega (em preparo, saiu para entrega ou já chegou), a hora que a entrega chegou e alguma observação caso seja nescessário, e é claro que ela tem uma relação direta com o entregador que é quem a realiza. Por ultimo temos o estoque que tem uma relação de agregação do produto com ele, e também temos uma relação do estoque com os funcionários, pois são eles quem gerenciam o estoque, outra relação que foi adicionada é a dos funcionários com o pedido pois como é um restaurante é essencial que alguém os prepare. 
+  
+  Outro fator interessante de mencionar é que as classes Cliente, Carrinho, Item, Pedido, Funcionário, Entrega, Entregador, Estoque, Produto e Fatura foram diretamente derivadas dos casos de uso, assim como seus relacionamentos, que refletem o fluxo das principais ações do sistema, como o cliente fazendo um pedido, o funcionário preparando e o entregador realizando a entrega. A composição entre Carrinho e Item, além da gestão de Estoque pelo Funcionário, também foram baseadas nesses cenários. Outras decisões, como a criação da classe Perfil e o uso de composição ou agregação, seguiram padrões de análise para complementar a modelagem.
+
 ## Prototipagem
 ![423848191-6ef4d579-ae58-424b-99a0-f9025ca18918](https://github.com/user-attachments/assets/696e656e-a554-456a-ab8d-6279b9998d2c)
 
