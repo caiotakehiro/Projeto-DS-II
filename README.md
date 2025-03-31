@@ -81,3 +81,68 @@ Atualizar status da entrega: Durante o processo de entrega, o entregador acessa 
 ![423848521-ad679977-e27e-4453-bf68-6b5ab85b1925](https://github.com/user-attachments/assets/5ad7d9f0-2e24-4e2a-91c9-7355bd0717d0)
 
 link figma: https://www.figma.com/design/kqa24SEzVIFO5gqo8plBzO/Prototipagem-DS-II?node-id=0-1&t=Hkkh2n9FQUhi3f3s-1
+
+## Levantamento de requisitos
+### Requisitos Consolidados e Priorizados
+
+1. O consumidor pode se cadastrar no site, informando dados pessoais como e-mail e senha.
+
+2. O consumidor pode navegar pelo site ou aplicativo, adicionando itens ao carrinho e visualizando o valor total atualizado.
+
+3. O consumidor pode realizar o pagamento do pedido, escolhendo entre diferentes formas de pagamento.
+
+4. O consumidor pode acompanhar o status do pedido em tempo real.
+
+5. O funcionário pode registrar pedidos recebidos presencialmente ou via telefone.
+
+6. O funcionário pode atualizar o status do pedido no sistema.
+
+7. O funcionário pode monitorar e gerenciar o estoque de produtos.
+
+8. O entregador pode visualizar detalhes do pedido, como endereço, forma de pagamento, valor total e observações do cliente.
+
+9. O entregador pode atualizar o status da entrega no sistema.
+
+10. O dono pode visualizar relatórios financeiros filtrados por período ou categoria.
+
+11. O consumidor pode avaliar os serviços após a entrega.
+
+12. O sistema deve garantir um tempo de resposta inferior a 2 segundos para operações críticas, como login e checkout.
+
+13. O sistema deve garantir a segurança dos dados dos usuários, utilizando criptografia para senhas e informações de pagamento.
+
+## Especificação de requisitos
+### Requisitos Não Funcionais
+#### Segurança
+Toda utilização do sistema requer autenticação do usuário.
+
+O sistema deve garantir a segurança dos dados dos usuários, utilizando criptografia AES-256 para senhas e informações de pagamento.
+
+Por questões de segurança, o usuário deve realizar novamente o login ao acessar funcionalidades críticas, como alterar dados pessoais ou realizar pagamentos.
+
+#### Usabilidade
+O texto exibido no monitor de vídeo do sistema deve ser facilmente visível a uma distância de um metro.
+
+Cores associadas com formas comuns de daltonismo devem ser evitadas.
+
+Sinais e alertas devem ser informados por sons, além de meios visuais, para facilitar a atenção dos funcionários e consumidores.
+#### Confiabilidade
+Se ocorrer uma falha no uso de um serviço externo (autorização de pagamentos, integração com sistemas de delivery, etc.), o sistema deve tentar resolver o problema com uma solução local (por exemplo, armazenar temporariamente os dados e seguir em frente), de modo a poder completar uma venda.
+
+O sistema deve emitir notificações automáticas para clientes e funcionários em caso de atrasos ou problemas operacionais.
+
+O sistema deve garantir previsibilidade, minimizando falhas durante operações críticas, como registro de pedidos e atualização de status.
+#### Desempenho
+O sistema deve garantir um tempo de resposta inferior a 2 segundos para operações críticas, como login, checkout e atualização de status.
+
+O sistema deve suportar até 1.000 usuários simultâneos sem degradação significativa no desempenho.
+
+O retorno da busca de produtos ou pedidos não pode demorar mais que 1 segundo.
+#### Facilidade de Suporte
+O sistema deve ser facilmente escalável para suportar novas funcionalidades futuras.
+
+O sistema deve ser compatível com navegadores modernos (Chrome, Firefox, Edge).
+
+O sistema deve permitir a configuração e personalização de relatórios financeiros e operacionais.
+
+#### Requisitos Funcionais
