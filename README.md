@@ -112,6 +112,9 @@ link figma: https://www.figma.com/design/kqa24SEzVIFO5gqo8plBzO/Prototipagem-DS-
 13. O sistema deve garantir a segurança dos dados dos usuários, utilizando criptografia para senhas e informações de pagamento.
 
 ## Especificação de requisitos
+### Introdução 
+Nessa sesão veremos todos os requisitos do sistema proposto que não estão documentados nos casos de uso. Ele aborda aspectos como segurança, usabilidade, confiabilidade, desempenho e outros requisitos não funcionais, além de detalhar os requisitos funcionais e as regras de negócio.
+
 ### Requisitos Não Funcionais
 #### Segurança
 Toda utilização do sistema requer autenticação do usuário.
@@ -145,4 +148,8 @@ O sistema deve ser compatível com navegadores modernos (Chrome, Firefox, Edge).
 
 O sistema deve permitir a configuração e personalização de relatórios financeiros e operacionais.
 
-#### Requisitos Funcionais
+### Requisitos Funcionais
+![428605823-64be59fe-0068-43b4-aa09-04ed3ba60d76](https://github.com/user-attachments/assets/05c58082-1d80-4eb8-98f5-393f3ab8fd91)
+
+### Regras de Negócio
+![428626853-a753dd53-84b2-43cc-95da-a088a82da05e](https://github.com/user-attachments/assets/f10a71df-08af-450a-bcae-0fbba2ff20f9)
