@@ -153,3 +153,23 @@ O sistema deve permitir a configuração e personalização de relatórios finan
 
 ### Regras de Negócio
 ![428626853-a753dd53-84b2-43cc-95da-a088a82da05e](https://github.com/user-attachments/assets/f10a71df-08af-450a-bcae-0fbba2ff20f9)
+
+##  Modelos de interação com aplicação de padrões GRASP
+### Diagrama de sequência do caso de uso principal
+![444922825-0fb44c94-5850-4ab5-ac92-ac29fbd1a019](https://github.com/user-attachments/assets/81d9e510-f1b3-4ff7-b547-d20a6d6184a5)
+
+### Padrões Grasp Aplicados:
+#### Controlador
+Aplicado em :ctlPagamento, que recebe as ações da interface e coordena o fluxo do pagamento. Foi usado para centralizar a lógica do caso de uso, evitando sobrecarga na interface.
+
+#### Criador
+ctlPagamento cria a Fatura porque possui os dados necessários. O padrão foi usado para manter o controle da criação em quem já gerencia o processo.
+
+#### Especialista na Informação
+A Fatura gera o comprovante e armazena os dados da transação. Isso evita espalhar informações e garante que quem tem os dados cuide deles.
+
+#### Acoplamento Baixo
+Cada classe tem uma função bem separada: interface, controle e dados. Isso reduz dependências e facilita manutenção.
+
+#### Coesão Alta
+As classes realizam tarefas específicas e bem definidas, tornando o sistema mais organizado, compreensível e fácil de modificar.
