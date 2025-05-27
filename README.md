@@ -173,3 +173,25 @@ Cada classe tem uma função bem separada: interface, controle e dados. Isso red
 
 #### Coesão Alta
 As classes realizam tarefas específicas e bem definidas, tornando o sistema mais organizado, compreensível e fácil de modificar.
+
+## Diagrama de Componentes
+![447772015-4e2e85c7-aca1-4640-addb-5c3c02d4614f](https://github.com/user-attachments/assets/a00901bf-0a18-4ac6-aee6-a62050641123)
+
+### Descrição dos Componentes
+#### SGBD
+Ele é responsável por armazenar e recuperar todas os dados do sistema, ele atua como um componente provedor para os módulos GerenciadorEstoque, GerenciadorPagamento e AutenticadorCliente, pois é a fonte de dados essênciais como produtos, faturas, perfis de clientes.
+
+#### GerenciadorEstoque
+Gerencia os produtos do restaurante, controlando a disponibilidade, quantidade e atualização do estoque. Ele consome dados do SGBD para realizar suas operações, como consultar a quantidade de produtos e atualizar o estoque após pedidos. Também é requisitado pelo GerenciamentoPedido, que depende dele para validar a existência de itens antes da finalização de uma compra.
+
+#### GerenciadorPagamento
+É o responsável por processar pagamentos, calcular valores, gerar faturas e registrar transações. Este componente depende do SGBD para armazenar e recuperar dados financeiros dos pedidos. Além disso, é chamado pelo GerenciamentoPedido, que solicita a execução do pagamento e aguarda a confirmação para finalizar o pedido.
+
+#### AutenticadorCliente
+Gerencia a autenticação e validação dos dados de login dos clientes, permitindo ou negando acesso às funcionalidades do sistema. Ele também interage com o SGBD para acessar informações de conta e perfil. O GerenciamentoPedido depende desse componente para garantir que apenas clientes autenticados possam iniciar e concluir pedidos.
+
+#### GerenciamentoPedido
+É o componente central da aplicação. É responsável por orquestrar o fluxo do pedido desde sua criação até a solicitação de entrega. Ele depende do GerenciadorEstoque para verificar a disponibilidade dos itens, do GerenciadorPagamento para processar a compra, e do AutenticadorCliente para garantir que o pedido seja vinculado a um cliente válido. Ao final do processo, o componente aciona o Entrega para iniciar o envio do pedido.
+
+#### Entrega
+Responsável por organizar e monitorar o processo de entrega do pedido ao cliente. Ele consome dados do GerenciamentoPedido, como endereço de entrega, hora da solicitação e status do pedido. Sua função é garantir que o pedido saia do restaurante e chegue ao cliente, mantendo o sistema atualizado com o progresso da entrega.
