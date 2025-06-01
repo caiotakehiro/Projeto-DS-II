@@ -195,3 +195,6 @@ Gerencia a autenticação e validação dos dados de login dos clientes, permiti
 
 #### Entrega
 Responsável por organizar e monitorar o processo de entrega do pedido ao cliente. Ele consome dados do GerenciamentoPedido, como endereço de entrega, hora da solicitação e status do pedido. Sua função é garantir que o pedido saia do restaurante e chegue ao cliente, mantendo o sistema atualizado com o progresso da entrega.
+
+### Diagrama de Pacotes
+![449711778-14ce7a59-95c5-45f9-a0a2-5cfbe9d3cb0c](https://github.com/user-attachments/assets/77a2ff94-fbc5-4e3c-a646-e96c6b878e16)
